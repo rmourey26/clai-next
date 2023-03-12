@@ -23,12 +23,12 @@ const Home: NextPage = () => {
     }
   };
 
-  const prompt = `Generate 2 ${vibe} job application cover letters with no hashtags and clearly labeled "1." and "2.". ${
+  const prompt = `Generate 2 ${vibe} job application cover letters ${
     vibe === "Funny"
       ? "Make sure there is a joke in there and it's a little ridiculous."
       : null
   }
-      Make sure each generated letter is less than 550 characters and based off of this context: ${letter}${
+      that are 200 words or less and within context: ${letter}${
     letter.slice(-1) === "." ? "" : "."
   }`;
 
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
           Create an AI generated cover letter in seconds
         </h1>
-        <p className="text-slate-500 mt-5">BusinessPro Coming Soon!.</p>
+        <p className="text-slate-500 mt-5">BusinessPro Coming Soon!</p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <Image
