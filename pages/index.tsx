@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       ? "Make sure there is a joke in there and it's a little ridiculous."
       : null
   }
-      Make sure each generated biography is less than 160 characters, has short sentences that are found in Twitter bios, and base them on this context: ${letter}${
+      Make sure each generated letter is less than 250 characters and based off of this context: ${letter}${
     letter.slice(-1) === "." ? "" : "."
   }`;
 
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+              "e.g. Product Manager with experience in open source projects, Jira, and web3 technologies"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
@@ -170,7 +170,7 @@ const Home: NextPage = () => {
                         className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                         onClick={() => {
                           navigator.clipboard.writeText(generatedLetter);
-                          toast("Bio copied to clipboard", {
+                          toast("Cover letter copied to clipboard", {
                             icon: "✂️",
                           });
                         }}
