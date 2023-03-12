@@ -6,10 +6,6 @@ import {
 
 export type ChatGPTAgent = "user" | "system";
 
-export const config = {
-  runtime: 'edge',
-};
-
 export interface ChatGPTMessage {
   role: ChatGPTAgent;
   content: string;
