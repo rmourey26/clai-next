@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       ? "Make sure there is a joke in there and it's a little ridiculous."
       : null
   }
-      Make sure each generated letter is less than 750 characters and based off of this context: ${letter}${
+      Make sure each generated letter is less than 550 characters and based off of this context: ${letter}${
     letter.slice(-1) === "." ? "" : "."
   }`;
 
