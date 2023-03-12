@@ -5,12 +5,12 @@ module.exports = {
     return [
       {
         source: "/github",
-        destination: "https://github.com/Nutlope/twitterbio",
+        destination: "https://github.com/rmourey26/clai-next",
         permanent: false,
       },
       {
         source: "/deploy",
-        destination: "https://vercel.com/templates/next.js/twitter-bio",
+        destination: "https://vercel.com/templates/next.js/clai-next",
         permanent: false,
       },
     ];
