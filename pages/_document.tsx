@@ -10,7 +10,7 @@ class MyDocument extends Document {
             name="description"
             content="Generate your next cover letter in seconds."
           />
-          <meta property="og:site_name" content="CoverLetterAI.com" />
+          <meta property="og:site_name" content="coverletterai.ai" />
           <meta
             property="og:description"
             content="Generate your next cover letter in seconds."
@@ -24,11 +24,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://coverletterai.com/og-image.png"
+            content="https://coverletterai.ai/og-image.png"
           />
           <meta
             name="twitter:image"
-            content="https://coverletterai.com/og-image.png"
+            content="https://coverletterai.ai/og-image.png"
           />
         </Head>
         <body>
