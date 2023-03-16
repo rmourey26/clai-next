@@ -33,6 +33,8 @@ const Home: NextPage = () => {
   }`;
 
   const generateLetter = async (e: any) => {
+    const controller = new AbortController(); // create an AbortController instance
+    const signal = controller.signal; //
     e.preventDefault();
     setGeneratedLetters("");
     setLoading(true);
@@ -44,7 +46,7 @@ const Home: NextPage = () => {
       body: JSON.stringify({
         prompt,
       }),
-    });
+    },{signal});
 
     if (!response.ok) {
       throw new Error(response.statusText);
