@@ -1,8 +1,8 @@
-# [CoverLetterAI.com](https://www.coverletterai.com/)
+# [coverletterai.ai](https://www.coverletterai.ai/)
 
 Generates a job application cover letter. 
 
-[![CoverLetterAI Generator]](https://www.coverletterai.com.com)
+[![CoverLetterAI Generator]](https://www.coverletterai.ai.com)
 
 ## How it works - Development is ongoing
 
