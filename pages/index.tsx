@@ -14,7 +14,8 @@ const Home: NextPage = () => {
   const [letter, setLetter] = useState("");
   const [vibe, setVibe] = useState<VibeType>("Professional");
   const [generatedLetters, setGeneratedLetters] = useState<String>("");
-
+  const controller = new AbortController(); // create an AbortController instance
+  const signal = controller.signal; //
   const letterRef = useRef<null | HTMLDivElement>(null);
 
   const scrollToLetters = () => {
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
     letter.slice(-1) === "." ? "" : "."
   }`;
 
-  const generateLetter = async (e: any) => {
+  const generateLetter = async (e: any, signal?:AbortSignal) => { 
     e.preventDefault();
     setGeneratedLetters("");
     setLoading(true);
