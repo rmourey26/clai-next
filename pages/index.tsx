@@ -33,7 +33,7 @@ const Home: NextPage = () => {
     letter.slice(-1) === "." ? "" : "."
   }`;
 
-  const generateLetter = async (e: any, signal?:abortSignal) => { 
+  const generateLetter = async (e: any, signal?:AbortSignal) => { 
     e.preventDefault();
     setGeneratedLetters("");
     setLoading(true);
